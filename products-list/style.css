@@ -1,0 +1,110 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  font-family: "IBM Plex Sans", sans-serif;
+  place-content: center;
+  text-align: center;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: hsl(216, 53%, 10%);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+select {
+  padding: 1rem 10rem 1rem 1rem;
+  border: 1px solid #cfd4dc;
+  background-color: initial;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.product__icon {
+  display: flex;
+  width: 4.5rem;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.product__card {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .product__card {
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+}
+
+.product__heading {
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
+.product__list {
+  display: flex;
+  width: 85vw;
+  justify-content: center;
+  margin-top: 4.375rem;
+}
+
+.product__list-item {
+  padding: 3rem 3rem 2rem;
+  margin-right: 15px;
+  background: linear-gradient(120.38deg, #faf2f4 1.41%, #f2f4fa 100%);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .product__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .product__list-item {
+    margin: 1rem 0;
+  }
+}
+
+.product__list-item:last-child {
+  margin-right: 0;
+}
+
+.product__list-item h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.product__list-item p {
+  padding: 10px 0 35px 0;
+}

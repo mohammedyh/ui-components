@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans';
+  background: #273C56;
+  color: #FFF;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 1000px;
+  height: 400px;
+  background: #152436;
+  border-radius: 8px;
+  box-shadow: 8px 30px 16px rgba(13, 29, 49, 0.62);
+}
+
+.card > h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+.stats__container {
+  display: flex;
+  text-align: center;
+}
+
+.stat { margin: 60px; }
+
+.card__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+span {
+  color: #456AFF;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card { transform: scale(0.8); }
+  .stat > p { font-size: 14; }
+}
+
+@media (max-width: 480px) {
+  .card { transform: scale(0.4); }
+  .stat > p {
+    width: 200px;
+    font-size: 14px;
+  }
+}

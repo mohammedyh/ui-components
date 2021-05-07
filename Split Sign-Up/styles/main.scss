@@ -1,0 +1,100 @@
+$background: linear-gradient(#F3F2FD, #F9F4FC);
+$sidePanel: linear-gradient(to bottom right, #BA91E9, #6D58CE);
+$signInBtn: #6E59CE;
+$textColor: #151E42;
+$inputBorder: #E4E8EE;
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Muli', sans-serif;
+  background: $background;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 1200px;
+  height: 750px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    color: $textColor;
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border: 1px solid darken($inputBorder, 5%);
+        padding: 16px;
+        margin: 20px 0;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 16px;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.6);
+        margin: 20px 5px;
+
+      }
+
+      .label__container {
+        display: inline;
+        color: lighten($textColor, 60%);
+      }
+
+      .btn {
+        border: none;
+        padding: 20px 100px;
+        margin-top: 30px;
+        background: #6E59CE;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0px 20px 20px rgba(89, 77, 223, 0.5);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .left-panel {
+    padding: 32px;
+    background: $sidePanel;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .feature__block {
+      margin: 65px 0 45px 0;
+
+      img { margin-bottom: 15px; }
+
+      p { width: 400px; }
+    }
+  }
+}

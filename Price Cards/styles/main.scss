@@ -1,0 +1,114 @@
+$backgroundColor: #0F0F1B;
+$cheapestOption: #242486;
+$cardBackground: #171727;
+$bestPrice: #A0E0B2;
+$mainFont: 'Nunito', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $backgroundColor;
+  font-family: $mainFont;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.py-16 { margin-top: 16px; }
+
+.body__subtitle {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  width: 520px;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: $cardBackground;
+    width: 265px;
+    height: 265px;
+    margin: 20px;
+    padding: 35px 30px;
+    border-radius: 20px;
+
+    &.cheapest { background: $cheapestOption; }
+
+    &__title { font-size: 22px; }
+
+    &__price {
+      font-size: 26px;
+      margin-top: 20px;
+    }
+
+    .best-price {
+      position: absolute;
+      top: -10px;
+      left: calc(50% - (35px + 12px));
+      background: $bestPrice;
+      border-radius: 15px;
+      color: $cardBackground;
+      padding: 2px 10px;
+    }
+
+    small {
+      display: block;
+      margin-top: 50px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+button {
+  background: none;
+  border: 1px solid #1F1F35;;
+  font-size: 16px;
+  font-family: $mainFont;
+  color: #ccc;
+  margin-top: 50px;
+  padding: 15px 45px;
+  border-radius: 10px;
+  color: #8080B9;
+  cursor: pointer;
+  transition: background 250ms ease-in-out;
+
+  &:hover { background: #1F1F35; }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper { height: 100%; }
+  .card__container { flex-direction: column; }
+  .card { margin: 0px 0px; }
+
+  .body__title {
+    font-size: 24px;
+    margin: 30px 0 10px 0;;
+  }
+
+  .body__subtitle {
+    font-size: 16px;
+    width: 75%;
+  }
+
+  button { margin: 25px; }
+}

@@ -1,0 +1,135 @@
+$bodyBackground: #17213a;
+$cardBackground: #222e49;
+$accentColor: #dc768c;
+$fontPrimary: "Inter", sans-serif;
+$borderColor: #4c5c8a;
+
+@mixin mobile-text {
+  width: 90%;
+  line-height: 1.6;
+}
+
+*::before,
+*::after,
+* { 
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: $accentColor;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $bodyBackground;
+  font-family: $fontPrimary;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $cardBackground;
+  padding-bottom: 6rem;
+  border-radius: 10px;
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 8rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    width: 45%;
+    margin-bottom: 3rem;
+    color: hsl(0, 0%, 75%);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    input {
+      border: 2px solid $borderColor;
+      border-radius: 4px;
+      padding: 1.8rem 10rem 1.8rem 1.8rem;
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      font-family: inherit;
+      background: none;
+      color: white;
+      outline: none;
+      transition: border 300ms ease-in-out;
+
+      &:focus {
+        border: 2px solid $accentColor;
+      }
+    }
+
+    button {
+      font-family: inherit;
+      background-color: darken($accentColor, 8%);
+      border: none;
+      border-radius: 5px;
+      padding: 1.8rem 4rem;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      transition: background-color 200ms ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($accentColor, 22%);
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  footer {
+    width: 60%;
+    color: hsl(0, 0%, 75%);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: lighten($cardBackground, 5%);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .card {
+    &__subtitle {
+      @include mobile-text();
+    }
+
+    footer {
+      @include mobile-text();
+    }
+  }
+}

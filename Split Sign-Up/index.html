@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Split Sign-Up Form</title>
+</head>
+
+<body>
+  <main>
+    <aside class="left-panel">
+      <div class="feature__block">
+        <img src="./tick.png" alt="A tick Icon">
+        <h3>Quick and free sign-up</h3>
+        <p>Enter your email address to create an account.</p>
+      </div>
+
+      <div class="feature__block">
+        <img src="./tick.png" alt="A tick Icon">
+        <h3>Cross-platform solution</h3>
+        <p>Preview your newsletter on any device before sending them out.</p>
+      </div>
+
+      <div class="feature__block">
+        <img src="./tick.png" alt="A tick Icon">
+        <h3>Start sending emails</h3>
+        <p>Use our API or pick our pre-built templates.</p>
+      </div>
+    </aside>
+
+    <aside class="right-panel">
+      <h1>Create your account</h1>
+      <form autocomplete="on">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email address">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your full name">
+
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" placeholder="Type to create a password">
+
+        <div>
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <div class="label__container">
+            <label for="checkbox">Get updates and notifications about our products</label>
+          </div>
+        </div>
+
+        <button type="button" class="btn">Create Your Account</button>
+      </form>
+    </aside>
+  </main>
+
+</body>
+</html>

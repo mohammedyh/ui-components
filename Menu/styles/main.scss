@@ -1,0 +1,128 @@
+// Mixin
+
+@mixin containerStyles($padding, $backgroundColor, $radius) {
+	padding: $padding;
+	background: $backgroundColor;
+	border-radius: $radius;
+}
+
+// Variables
+
+$mainBackground: #151229;
+$contentBorderBackground: #201c39;
+$fontPrimary: 'Muli', 'Varela Round', sans-serif;
+$fontColor: #151229;
+$sideFeatureTextWidth: 200px;
+$radius: 10px;
+
+// Styles
+
+*::before,
+*::after,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $fontPrimary;
+	background: $mainBackground;
+	height: 100vh;
+	color: $fontColor;
+}
+
+.wrapper { @include containerStyles(55px, $contentBorderBackground, 20px); }
+
+.container {
+	display: grid;
+	grid-template-areas:
+		'feature1 feature2 side-feature'
+		'feature3 feature4 side-feature';
+	@include containerStyles(100px, white, 10px);
+
+	&__item {
+		position: relative;
+		margin: 50px;
+	}
+
+	p { width: 240px; }
+
+	&__item:nth-child(1) { grid-area: feature1; }
+	&__item:nth-child(2) { grid-area: feature2; }
+	&__item:nth-child(3) { grid-area: feature3; }
+	&__item:nth-child(4) { grid-area: feature4; }
+
+	.side-feature {
+		display: grid;
+		grid-area: side-feature;
+		align-content: space-evenly;
+		border-radius: $radius;
+		
+		&__img {
+			display: block;
+			border-top-left-radius: $radius;
+			border-top-right-radius: $radius;
+		}
+
+		h3 {
+			width: $sideFeatureTextWidth;
+			margin-bottom: -20px;
+		}
+
+		p { width: $sideFeatureTextWidth; }
+	}
+
+	.feature-icon { 
+		position: absolute;
+		left: -50px;
+	 }
+}
+
+@media screen and (max-width: 600px) {
+	body { height: 100%; }
+	
+	.wrapper { padding: 15px; }
+
+	.container {
+		grid-template-areas:
+			'feature1'
+			'feature2'
+			'feature3'
+			'feature4'
+			'side-feature';
+		padding: 10px;
+
+		&__item { 
+			margin: 15px 50px;
+			line-height: 1.5;
+		}
+
+		&__item:nth-child(1) { grid-area: feature1; }
+		&__item:nth-child(2) { grid-area: feature2; }
+		&__item:nth-child(3) { grid-area: feature3; }
+		&__item:nth-child(4) { grid-area: feature4; }
+
+		.side-feature {
+			display: grid;
+			grid-area: side-feature;
+			justify-content: center;
+			align-content: center;
+
+			img { width: 100%; }
+
+			 h3 {
+				 margin: 15px 0;
+				 width: 100%;
+			 }
+			
+			 p {
+				 margin-bottom: 10px;
+				 line-height: 1.5;
+			 }
+		}
+	}
+}

@@ -1,0 +1,72 @@
+:root {
+  --primary-font: 'Muli';
+  --secondary-font: 'Merriweather';
+  --clr-text: #0D1121;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--primary-font);
+  color: var(--clr-text);
+}
+
+.card {
+  box-shadow: 0px 30px 40px rgba(200, 214, 236, 0.5);
+  padding: 10em 8em;
+  position: relative;
+  border-radius: 15px;
+}
+
+.card h1 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card p {
+  padding: 1.2em 0 2em 0;
+}
+
+.cross__container {
+  position: absolute;
+  top: 1.5em; 
+  right: 1.5em; 
+  cursor: pointer;
+}
+
+.input__container input {
+  font-family: inherit;
+  padding: 1.1em 6em 1.1em 1.5em;
+  border: 1px solid #D8E2F1;
+  background-color: #FAFCFF;
+  border-radius: 5px;
+}
+
+.input__container label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.input__container button {
+  padding: 1.2em 3em;
+  border: none;
+  background: orangered;
+  color: white;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+}

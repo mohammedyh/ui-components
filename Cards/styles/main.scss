@@ -1,0 +1,101 @@
+$backgroundColor: #2F3550;
+$buttonBackground: #6383F5;
+$cardColor: #4265E2;
+$cardBorder: 10px;
+$letterSpacing: 0.6px;
+
+::selection {
+  background: $backgroundColor;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans';
+  background: $backgroundColor;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: $letterSpacing;
+}
+
+img { border-radius: 5px; }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    background: $cardColor;
+    border-radius: $cardBorder;
+    padding: 50px;
+    margin: 60px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      letter-spacing: $letterSpacing;
+    }
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+
+    p {
+      display: flex;
+      width: 300px;
+      align-items: center;
+    }
+    
+    img {
+      height: 80px;
+      cursor: pointer;
+      position: relative;
+      left: 100px;
+    }
+  }
+
+  .card-2 a {
+    display: flex;
+    width: 450px;
+    margin-top: 10px;
+  }
+
+  .card-3 {
+    h3 { margin-top: 30px; }
+    p.faded { color: rgba(255, 255, 255, 0.5); }
+    
+    button {
+      border: none;
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      font-family: 'Nunito Sans';
+      padding: 10px 22px;
+      font-size: 18px;
+      margin-top: 30px;
+      border-radius: 5px;
+      transition: all 250ms ease-in-out;
+      cursor: pointer;
+
+      &:hover { background: rgba(255, 255, 255, 0.2) }
+    }
+  }
+}

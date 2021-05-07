@@ -1,0 +1,104 @@
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merriweather', sans-serif;
+  background: linear-gradient(-45deg, #EC80AE, #A779E8);
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  color: #2024B0;
+}
+
+p { font-family: 'Muli', sans-serif; }
+
+.card {
+  width: 600px;
+  height: 600px;
+  padding: 3.8em 0em 2em 4em;
+  background: white;
+  box-shadow: 0px 36px 35px rgba(153, 94, 205, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+
+.cross__container {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #EDF0FF;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.content__container {
+  display: inline-block;
+  margin-left: 1.25em;
+}
+
+.content__title { font-size: 22px; }
+
+.content__subtitle { font-size: 16px; }
+
+.documentation__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-content: center;
+  margin-top: 60px;
+}
+
+.platform__title, .integrations__title {
+  font-size: 20px;
+}
+
+.platform__title ~ p, .integrations__title ~ p {
+  display: flex;
+  font-size: 16px;
+  margin: 1em 0;
+}
+
+.integrations img {
+  margin-right: 5px;
+}
+
+.footer__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 85%;
+  padding: 1.5em 0;
+  margin-top: 40px;
+  text-align: center;
+  gap: 20px;
+  background-color: #FAFBFF;
+  border: 1px solid #E2E5F6;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    height: 650px; 
+    margin-top: 8em; 
+    border-radius: 0 ; 
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .card { height: 900px; }
+  .content__container {
+    width: 205px;
+    margin-top: 2em; 
+  }
+}

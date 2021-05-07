@@ -1,0 +1,90 @@
+$backgroundColor: #DDE1EE;
+$textPrimary: #12101A;
+$fontStack: 'Inter', sans-serif;
+
+*::before,
+*::after,
+* { box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $backgroundColor;
+  color: $textPrimary;
+  font-family: $fontStack;
+  height: 100vh;
+}
+
+.card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 45px 30px rgba(121, 137, 191, 0.2);
+}
+
+.card.card-1 {
+  text-align: left;
+  
+  .jobs__container {
+    width: 35rem;
+
+    @media screen and (max-width: 672px) {
+      width: 20em;
+    }
+    
+    .job {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #DDE1EE;
+
+      &:last-child { border-bottom: none; }
+
+      @media screen and (max-width: 672px) {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.card.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  p {
+    width: 300px;
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  
+  .updates-card {
+    background-color: #F7F8FB;
+    padding: 2rem;
+
+    button {
+      font-family: inherit;
+      background-color: $textPrimary;
+      border: none;
+      color: white;
+      padding: 0.8rem 1.4rem;
+      border-radius: 4px;
+      box-shadow: 0px 20px 24px rgba(18, 16, 26, 0.57);
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  body {
+    height: 100%;
+    flex-direction: column;
+  }
+  .card.card-2 { margin-top: 4rem; }
+}

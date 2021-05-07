@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #0F0F2B;
+  background: #F4F9FF;
+}
+
+.card {
+  width: 1270px;
+  height: 680px;
+  box-shadow: 0px 30px 55px rgba(50, 112, 187, 0.5);
+}
+
+nav {
+  margin: 30px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+@media screen and (max-width: 840px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+nav ul li {
+  padding: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0F0F2B;
+  transition: color 200ms ease-in-out;
+}
+nav ul li a:hover {
+  color: #6d6dcc;
+}
+
+header {
+  padding: 60px 200px;
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  header {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 840px) {
+  header {
+    padding: auto;
+  }
+}
+header .main__title {
+  font-size: 36px;
+}
+@media screen and (max-width: 450px) {
+  header .main__title {
+    margin-top: 80px;
+  }
+}
+header .main__subtitle {
+  width: 480px;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+@media screen and (max-width: 450px) {
+  header .main__subtitle {
+    width: 280px;
+    font-size: 20px;
+    margin: 35px auto;
+    line-height: 1.5;
+    color: #0F0F2B;
+  }
+}
+header .cta {
+  background: #3F9CCF;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  header .cta {
+    margin-bottom: 20px;
+  }
+}
+header .cta:hover {
+  transform: scale(1.1);
+}
+header img {
+  width: 490px;
+  position: absolute;
+  top: -88px;
+  right: 0;
+  z-index: -99;
+}
+@media screen and (max-width: 450px) {
+  header img {
+    top: 0px;
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0F0F2B;
+  color: white;
+  height: 282px;
+}
+.newsletter__subtitle {
+  width: 400px;
+  text-align: center;
+  margin: 25px 0;
+}
+.newsletter input {
+  width: 300px;
+  padding: 11px;
+  border-radius: 5px;
+  background: white;
+  font-family: inherit;
+  font-size: 16px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 450px) {
+  .newsletter input {
+    width: 200px;
+  }
+}
+.newsletter button[type=submit] {
+  background: #3F9CCF;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.newsletter button[type=submit]:hover {
+  transform: scale(1.1);
+}
+.newsletter small {
+  color: #999999;
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */

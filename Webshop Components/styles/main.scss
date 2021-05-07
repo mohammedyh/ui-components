@@ -1,0 +1,135 @@
+$bodyBackground: #D9E2E8;
+$cardBackground: #E5EBF2;
+$cardShadow: 0px 15px 46px #cfd4d6;
+$textColor: #0E0E0C;
+$buttonColor: #0B0A08;
+$buttonText: #FFA2AD;
+$fontFamily: 'Muli', 'Manrope', sans-serif;
+$headingPrimary: 42px;
+$headingSeconday: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily;
+  background: $bodyBackground;
+  font-weight: bold;
+  color: $textColor;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 450px;
+  background: $cardBackground;
+  border-radius: 15px;
+  box-shadow: $cardShadow;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 0px 60px;
+
+    h1 {
+      font-size: $headingPrimary;
+      margin: 100px 0 15px 0
+    }
+
+    p {
+      font-size: $headingSeconday;
+      margin-bottom: 45px;
+    }
+
+    button {
+      font-family: $fontFamily;
+      font-size: $headingSeconday;
+      border: none;
+      background: $buttonColor;
+      color: $buttonText;
+      padding: 20px 35px;
+      border-radius: 5px;
+      transition: all 350ms ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: $buttonText;
+        color: $buttonColor;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background: url('../shoe.jpg') center center/cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  body { transform: scale(0.8); }
+  .card .left h1 { 
+    font-size: 32px;
+   }
+}
+
+@media screen and (max-width: 780px) {
+  body { transform: scale(0.8); }
+  .card .left h1 { 
+    font-size: 32px;
+   }
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      height: 100%;
+
+      h1 { margin: 35px 0 15px 0; }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-bottom: 20px;
+        padding: 15px 25px;
+      }
+    }
+
+    .right { width: 100%; }
+  }
+
+  body {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card { transform: scale(1.5); }
+}
+
+// @media screen and (max-width: 2560px) {
+//   .card { transform: scale(2.2); }
+// }
