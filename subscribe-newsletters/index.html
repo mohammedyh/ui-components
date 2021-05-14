@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Subscribe Card</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="card">
+        <h1>Sign up for newsletters</h1>
+        <div class="newsletters__wrapper">
+          <div class="newsletters__item mb-1">
+            <input type="checkbox" />
+            <div class="newsletters__item-info">
+              <h3>Daily Bits</h3>
+              <p>Today's biggest news</p>
+            </div>
+          </div>
+
+          <div class="newsletters__item mb-1">
+            <input type="checkbox" />
+            <div class="newsletters__item-info">
+              <h3>The Exchange</h3>
+              <p>Art, money and markets</p>
+            </div>
+          </div>
+
+          <div class="newsletters__item mb-1 selected">
+            <input type="checkbox" checked />
+            <div class="newsletters__item-info">
+              <h3>Sponsorship</h3>
+              <p>Partnership insight</p>
+            </div>
+          </div>
+
+          <div class="newsletters__item selected">
+            <input type="checkbox" checked />
+            <div class="newsletters__item-info">
+              <h3>Week in Review</h3>
+              <p>The week's biggest news</p>
+            </div>
+          </div>
+
+          <div class="newsletters__item">
+            <input type="checkbox" />
+            <div class="newsletters__item-info">
+              <h3>Event Updates</h3>
+              <p>Announcements and discounts</p>
+            </div>
+          </div>
+          <div class="newsletters__item selected">
+            <input type="checkbox" checked />
+            <div class="newsletters__item-info">
+              <h3>This Week in Art</h3>
+              <p>Art news of the week</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsletters__subscribe">
+          <input type="email" placeholder="Enter your email address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .querySelectorAll('input[type="checkbox"]')
+        .forEach((box) => box.addEventListener('click', selectNewsletter));
+
+      function selectNewsletter(e) {
+        this.checked
+          ? this.parentElement.classList.add('selected')
+          : this.parentElement.classList.remove('selected');
+      }
+    </script>
+  </body>
+</html>
