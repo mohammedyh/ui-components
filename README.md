@@ -6,8 +6,11 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a948126 (<docs> Added trailing slash to all links)
+=======
+>>>>>>> b330e34 (<docs> Added trailing slash to all links)
 |  #  | Component             | Live Preview                                                                     |
 | :-: | :-------------------- | :------------------------------------------------------------------------------- |
 |  1  | Stats Card            | [Live Preview](https://mohammedyh.github.io/ui-components/Stats%20Card/)         |
@@ -40,12 +43,17 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 | 24  | Survey Popup          | [Live Preview](https://mohammedyh.github.io/ui-components/survey-popup)          |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 321b02a (<docs> Added trailing slash to all links)
 =======
 >>>>>>> 4931df7 (<docs> Added survey popup component)
 =======
 >>>>>>> a948126 (<docs> Added trailing slash to all links)
+=======
+=======
+>>>>>>> 321b02a (<docs> Added trailing slash to all links)
+>>>>>>> b330e34 (<docs> Added trailing slash to all links)
 |  #  | Component             | Live Preview                                                                      |
 | :-: | :-------------------- | :-------------------------------------------------------------------------------- |
 |  1  | Stats Card            | [Live Preview](https://mohammedyh.github.io/ui-components/Stats%20Card/)          |
@@ -76,6 +84,7 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 993e3e6 (<docs> Added trailing slash to all links)
 <<<<<<< HEAD
 >>>>>>> e8e79dd (<docs> Added trailing slash to all links)
@@ -97,3 +106,8 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 =======
 >>>>>>> 993e3e6 (<docs> Added trailing slash to all links)
 >>>>>>> a948126 (<docs> Added trailing slash to all links)
+=======
+>>>>>>> 993e3e6 (<docs> Added trailing slash to all links)
+=======
+>>>>>>> 321b02a (<docs> Added trailing slash to all links)
+>>>>>>> b330e34 (<docs> Added trailing slash to all links)
