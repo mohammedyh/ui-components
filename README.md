@@ -26,3 +26,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 | 20  | Job Role Cards        | [Live Preview](https://mohammedyh.github.io/ui-components/job-role-cards)        |
 | 21  | Products List         | [Live Preview](https://mohammedyh.github.io/ui-components/products-list)         |
 | 22  | Subscribe Newsletters | [Live Preview](https://mohammedyh.github.io/ui-components/subscribe-newsletters) |
+| 23  | Footer                | [Live Preview](https://mohammedyh.github.io/ui-components/footer)                |
