@@ -8,6 +8,7 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a948126 (<docs> Added trailing slash to all links)
 =======
@@ -57,6 +58,8 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 >>>>>>> b330e34 (<docs> Added trailing slash to all links)
 =======
 >>>>>>> a08be3a (<docs> Added survey popup component)
+=======
+>>>>>>> 993e3e6 (<docs> Added trailing slash to all links)
 |  #  | Component             | Live Preview                                                                      |
 | :-: | :-------------------- | :-------------------------------------------------------------------------------- |
 |  1  | Stats Card            | [Live Preview](https://mohammedyh.github.io/ui-components/Stats%20Card/)          |
@@ -82,6 +85,7 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 | 21  | Products List         | [Live Preview](https://mohammedyh.github.io/ui-components/products-list/)         |
 | 22  | Subscribe Newsletters | [Live Preview](https://mohammedyh.github.io/ui-components/subscribe-newsletters/) |
 | 23  | Footer                | [Live Preview](https://mohammedyh.github.io/ui-components/footer/)                |
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,3 +122,5 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 =======
 | 24  | Survey Popup          | [Live Preview](https://mohammedyh.github.io/ui-components/survey-popup/)          |
 >>>>>>> a08be3a (<docs> Added survey popup component)
+=======
+>>>>>>> 993e3e6 (<docs> Added trailing slash to all links)
