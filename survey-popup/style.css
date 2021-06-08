@@ -1,0 +1,54 @@
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: "Lexend", sans-serif;
+  background-color: #c4cce3;
+  color: white;
+}
+
+.popup__card {
+  position: relative;
+  width: 650px;
+  height: 350px;
+  background-color: #2c314b;
+}
+
+.popup__wrapper {
+  padding: 0 2em;
+}
+
+.popup__cross {
+  position: absolute;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  background-color: #4b5481;
+  cursor: pointer;
+}
+
+h3 {
+  max-width: 17em;
+  font-size: 24px;
+  margin: 3em 0 2em 0;
+}
+
+button {
+  padding: 1.2em;
+  border: none;
+  background-color: #f09653;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popup__btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#popupOpen {
+  display: none;
+}

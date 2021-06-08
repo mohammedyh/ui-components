@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Survey Popup</title>
+</head>
+
+<body>
+  <div class="popup__card">
+    <div class="popup__wrapper">
+      <div class="popup__cross">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>Would you like to receive updates when we post new upcoming webinars?</h3>
+      <div class="popup__options">
+        <label for="yes">
+          <input type="radio" id="yes" checked />
+          Yes, please
+        </label>
+        <label for="no">
+          <input type="radio" id="no" />
+          Nope
+        </label>
+      </div>
+    </div>
+
+    <button class="popup__btn">Next &rsaquo;</button>
+  </div>
+  
+  <!-- Button for hidden state -->
+  <button id="popupOpen">Open Survey Popup</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
