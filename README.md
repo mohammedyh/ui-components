@@ -27,7 +27,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 | 21  | Products List         | [Live Preview](https://mohammedyh.github.io/ui-components/products-list/)         |
 | 22  | Subscribe Newsletters | [Live Preview](https://mohammedyh.github.io/ui-components/subscribe-newsletters/) |
 | 23  | Footer                | [Live Preview](https://mohammedyh.github.io/ui-components/footer/)                |
-<<<<<<< HEAD
 | 24  | Survey Popup          | [Live Preview](https://mohammedyh.github.io/ui-components/survey-popup/)          |
-=======
->>>>>>> 3c90985466b453527394d81abf37c784a67a4dd4
