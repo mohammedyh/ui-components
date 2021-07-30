@@ -28,4 +28,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 | 22  | Subscribe Newsletters | [Live Preview](https://mohammedyh.github.io/ui-components/subscribe-newsletters) |
 | 23  | Footer                | [Live Preview](https://mohammedyh.github.io/ui-components/footer)                |
 | 24  | Survey Popup          | [Live Preview](https://mohammedyh.github.io/ui-components/survey-popup)          |
-| 25  | Pricing Cards          | [Live Preview](https://mohammedyh.github.io/ui-components/survey-popup)          |
+| 25  | Pricing Cards          | [Live Preview](https://mohammedyh.github.io/ui-components/pricing-cards)        |
