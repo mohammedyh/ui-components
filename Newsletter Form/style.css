@@ -38,7 +38,7 @@ p { font-size: 18px; }
   width: 450px;
   background: none;
   border: 2px solid #fff;
-  font-family: 'Muli';
+  font-family: inherit;
   font-size: 18px;
   padding: 16px;
   border-radius: 5px;
@@ -51,7 +51,7 @@ p { font-size: 18px; }
 
 .input-container button {
   border: none;
-  font-family: 'Muli';
+  font-family: inherit;
   font-size: 18px;
   color: #62637A;
   border-top-right-radius: 5px;
