@@ -59,6 +59,7 @@ h1 {
 .newsletters__item input[type='checkbox'] {
   width: 22px;
   height: 22px;
+  margin-right: 1rem;
   align-self: baseline;
   cursor: pointer;
 }
