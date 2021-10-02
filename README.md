@@ -31,3 +31,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 |  25   | Pricing Cards         | [Live Preview](https://mohammedyh.github.io/ui-components/pricing-cards/)        |
 |  26   | Column Layout         | [Live Preview](https://mohammedyh.github.io/ui-components/card-layout/)          |
 |  27   | Website Section       | [Live Preview](https://mohammedyh.github.io/ui-components/website-section/)      |
+|  28   | Contribute Card       | [Live Preview](https://mohammedyh.github.io/ui-components/contribute-card/)      |
