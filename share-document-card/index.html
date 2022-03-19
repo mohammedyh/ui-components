@@ -79,12 +79,12 @@
 
 			copyLinkBtn.addEventListener('click', function() {
 				navigator.clipboard
-					.write(inputValue)
+					.writeText(inputValue)
 					.then(() => {
 						copyLinkBtn.textContent = 'Copied!';
 						setTimeout(() => (copyLinkBtn.textContent = 'Copy link'), 1500);
 					})
-					.catch(() => alert('error when copying to clipboard'));
+					.catch(err => console.log('error when copying to clipboard', err));
 			});
 		</script>
 	</body>
