@@ -1,0 +1,19 @@
+{
+  "name": "billing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/tailwind.css -o public/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.1",
+    "prettier-plugin-tailwindcss": "^0.1.8"
+  }
+}
