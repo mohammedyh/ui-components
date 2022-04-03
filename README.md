@@ -36,3 +36,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 |  30   | NFT Preview Card        | [Live Preview](https://mohammedyh.github.io/ui-components/nft-preview-card/)           |
 |  31   | Share Document Card     | [Live Preview](https://mohammedyh.github.io/ui-components/share-document-card/)        |
 |  32   | Multi Select Price Card | [Live Preview](https://mohammedyh.github.io/ui-components/multi-select-price-card/src) |
+|  33   | Billing Page            | [Live Preview](https://mohammedyh.github.io/ui-components/billing-page/src)            |
