@@ -3,7 +3,7 @@ const priceOptions = document.querySelector('[data-price-options]');
 const cardPrice = document.querySelector('[data-card-price]');
 
 priceOptions.addEventListener('click', handlePriceChange);
-subscribeBtn.addEventListener('click', handleSubscribe);
+subscribeBtn.addEventListener('click', handleSubscribe, { once: true });
 
 function handlePriceChange(e) {
 	if (!e.target.dataset.option) return;
@@ -27,6 +27,4 @@ function handleSubscribe() {
 		buttonText.classList.remove('hidden');
 		buttonText.textContent = 'Thank you for subscribing!';
 	}, 2000);
-
-	subscribeBtn.removeEventListener('click', handleSubscribe);
 }
