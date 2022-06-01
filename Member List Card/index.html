@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./main.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/main.css">
-  <title>Document</title>
-</head>
+	<body>
+		<main class="card__container">
+			<div class="card-1">
+				<div class="card-1__header">
+					<h3>Members</h3>
+					<div class="invite-members">
+						<img class="icon-plus" src="./icon-plus.svg" alt="Plus icon" />
+						<p>Invite members</p>
+					</div>
+				</div>
 
-<body>
-  <main class="card__container">
-    <div class="card-1">
+				<div class="members__wrapper">
+					<div class="member">
+						<span class="profile-bubble member-1">IG</span>
+						<h4>Ildiko Gaspar <small class="current action">You</small></h4>
+					</div>
 
-      <div class="card-1__header">
-        <h3>Members</h3>
-        <div class="invite-members">
-          <img class="icon-plus" src="./icon-plus.svg" alt="Plus icon" />
-          <p>Invite members</p>
-        </div>
-      </div>
+					<div class="member">
+						<span class="profile-bubble member-2">GC</span>
+						<h4>George Connor <small class="action">Remove</small></h4>
+					</div>
 
-      <div class="members__wrapper">
-        <div class="member">
-          <span class="profile-bubble member-1">IG</span>
-          <h4>Ildiko Gaspar <small class="current action">You</small></h4>
-        </div>
+					<div class="member">
+						<span class="profile-bubble member-3">FZ</span>
+						<h4>Feliks Zemdegs <small class="action">Remove</small></h4>
+					</div>
+				</div>
+			</div>
 
-        <div class="member">
-          <span class="profile-bubble member-2">GC</span>
-          <h4>George Connor <small class="action">Remove</small></h4>
-        </div>
-
-        <div class="member">
-          <span class="profile-bubble member-3">FZ</span>
-          <h4>Feliks Zemdegs <small class="action">Remove</small></h4>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="card-2"></div>
-  </main>
-</body>
+			<div class="card-2"></div>
+		</main>
+	</body>
 </html>

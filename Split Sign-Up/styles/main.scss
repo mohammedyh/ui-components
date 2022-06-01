@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   background: $background;
   height: 100vh;
 }
@@ -94,7 +94,10 @@ main {
 
       img { margin-bottom: 15px; }
 
-      p { width: 400px; }
+      p {
+        width: 400px;
+        margin-top: 8px;
+      }
     }
   }
 }

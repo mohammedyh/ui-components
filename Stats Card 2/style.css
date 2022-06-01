@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans';
+  font-family: 'IBM Plex Sans', sans-serif;
   background: #273C56;
   color: #FFF;
 }
@@ -19,7 +19,7 @@ body {
 
 .card {
   width: 1000px;
-  height: 400px;
+  padding: 5rem;
   background: #152436;
   border-radius: 8px;
   box-shadow: 8px 30px 16px rgba(13, 29, 49, 0.62);
@@ -27,16 +27,25 @@ body {
 
 .card > h1 {
   text-align: center;
-  margin-top: 50px;
   font-size: 26px;
 }
 
 .stats__container {
+  padding: 2rem 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
   text-align: center;
 }
 
-.stat { margin: 60px; }
+.stat {
+  flex: 1 1 25%;
+}
+
+.stat p {
+  line-height: 1.6;
+}
 
 .card__footer {
   display: flex;

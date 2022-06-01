@@ -1,6 +1,6 @@
 $backgroundColor: #DDE1EE;
 $textPrimary: #12101A;
-$fontStack: 'Inter', sans-serif;
+$fontStack: 'Commissioner', sans-serif;
 
 *::before,
 *::after,
@@ -26,14 +26,14 @@ body {
 
 .card.card-1 {
   text-align: left;
-  
+
   .jobs__container {
     width: 35rem;
 
     @media screen and (max-width: 672px) {
       width: 20em;
     }
-    
+
     .job {
       display: flex;
       justify-content: space-between;
@@ -56,14 +56,14 @@ body {
   flex-direction: column;
   align-items: center;
 
-  
+
   p {
     width: 300px;
     line-height: 1.5;
     margin: 0;
     padding-bottom: 2rem;
   }
-  
+
   .updates-card {
     background-color: #F7F8FB;
     padding: 2rem;

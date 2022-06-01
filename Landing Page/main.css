@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Kumbh Sans";
+  font-family: "Kumbh Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,33 +18,37 @@ body {
 
 .card {
   width: 1270px;
-  height: 680px;
   box-shadow: 0px 30px 55px rgba(50, 112, 187, 0.5);
 }
 
 nav {
   margin: 30px;
 }
+
 nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
 }
+
 @media screen and (max-width: 840px) {
   nav ul {
     justify-content: center;
   }
 }
+
 nav ul li {
   padding: 0 20px;
 }
+
 nav ul li a {
   text-decoration: none;
   font-size: 18px;
   color: #0F0F2B;
   transition: color 200ms ease-in-out;
 }
+
 nav ul li a:hover {
   color: #6d6dcc;
 }
@@ -53,30 +57,37 @@ header {
   padding: 60px 200px;
   position: relative;
 }
+
 @media screen and (max-width: 450px) {
   header {
     text-align: center;
     padding: 0;
   }
 }
+
 @media screen and (max-width: 840px) {
   header {
     padding: auto;
   }
 }
+
 header .main__title {
   font-size: 36px;
 }
+
 @media screen and (max-width: 450px) {
   header .main__title {
     margin-top: 80px;
   }
 }
+
 header .main__subtitle {
   width: 480px;
   font-size: 18px;
-  margin: 10px 0 20px 0;
+  margin: 15px 0;
+  line-height: 1.5;
 }
+
 @media screen and (max-width: 450px) {
   header .main__subtitle {
     width: 280px;
@@ -86,6 +97,7 @@ header .main__subtitle {
     color: #0F0F2B;
   }
 }
+
 header .cta {
   background: #3F9CCF;
   font-family: inherit;
@@ -97,14 +109,17 @@ header .cta {
   transition: transform 200ms ease-in-out;
   cursor: pointer;
 }
+
 @media screen and (max-width: 450px) {
   header .cta {
     margin-bottom: 20px;
   }
 }
+
 header .cta:hover {
   transform: scale(1.1);
 }
+
 header img {
   width: 490px;
   position: absolute;
@@ -112,6 +127,7 @@ header img {
   right: 0;
   z-index: -99;
 }
+
 @media screen and (max-width: 450px) {
   header img {
     top: 0px;
@@ -127,25 +143,30 @@ header img {
   color: white;
   height: 282px;
 }
+
 .newsletter__subtitle {
   width: 400px;
   text-align: center;
   margin: 25px 0;
 }
+
 .newsletter input {
+  padding: 12px;
+  border: none;
   width: 300px;
-  padding: 11px;
   border-radius: 5px;
   background: white;
   font-family: inherit;
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
+
 @media screen and (max-width: 450px) {
   .newsletter input {
     width: 200px;
   }
 }
+
 .newsletter button[type=submit] {
   background: #3F9CCF;
   font-family: inherit;
@@ -158,9 +179,11 @@ header img {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
 .newsletter button[type=submit]:hover {
   transform: scale(1.1);
 }
+
 .newsletter small {
   color: #999999;
   text-align: left;

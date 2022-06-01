@@ -1,5 +1,4 @@
 // Mixin
-
 @mixin containerStyles($padding, $backgroundColor, $radius) {
 	padding: $padding;
 	background: $backgroundColor;
@@ -7,16 +6,14 @@
 }
 
 // Variables
-
 $mainBackground: #151229;
 $contentBorderBackground: #201c39;
-$fontPrimary: 'Muli', 'Varela Round', sans-serif;
+$fontPrimary: 'Varela Round', sans-serif;
 $fontColor: #151229;
 $sideFeatureTextWidth: 200px;
 $radius: 10px;
 
 // Styles
-
 *::before,
 *::after,
 * {
@@ -61,7 +58,7 @@ body {
 		grid-area: side-feature;
 		align-content: space-evenly;
 		border-radius: $radius;
-		
+
 		&__img {
 			display: block;
 			border-top-left-radius: $radius;
@@ -76,7 +73,7 @@ body {
 		p { width: $sideFeatureTextWidth; }
 	}
 
-	.feature-icon { 
+	.feature-icon {
 		position: absolute;
 		left: -50px;
 	 }
@@ -84,7 +81,7 @@ body {
 
 @media screen and (max-width: 600px) {
 	body { height: 100%; }
-	
+
 	.wrapper { padding: 15px; }
 
 	.container {
@@ -96,7 +93,7 @@ body {
 			'side-feature';
 		padding: 10px;
 
-		&__item { 
+		&__item {
 			margin: 15px 50px;
 			line-height: 1.5;
 		}
@@ -118,7 +115,7 @@ body {
 				 margin: 15px 0;
 				 width: 100%;
 			 }
-			
+
 			 p {
 				 margin-bottom: 10px;
 				 line-height: 1.5;
