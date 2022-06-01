@@ -52,6 +52,7 @@ body {
     p {
       font-size: $headingSeconday;
       margin-bottom: 45px;
+      font-weight: 400;
     }
 
     button {
@@ -84,14 +85,14 @@ body {
 
 @media screen and (max-width: 1920px) {
   body { transform: scale(0.8); }
-  .card .left h1 { 
+  .card .left h1 {
     font-size: 32px;
    }
 }
 
 @media screen and (max-width: 780px) {
   body { transform: scale(0.8); }
-  .card .left h1 { 
+  .card .left h1 {
     font-size: 32px;
    }
 }

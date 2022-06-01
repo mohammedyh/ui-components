@@ -10,18 +10,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Merriweather', serif;
   background: linear-gradient(-45deg, #EC80AE, #A779E8);
   height: 100vh;
 }
 
 a {
   text-decoration: none;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #2024B0;
 }
 
-p { font-family: 'Muli', sans-serif; }
+p { font-family: 'Mulish', sans-serif; }
 
 .card {
   width: 600px;
@@ -89,9 +89,9 @@ p { font-family: 'Muli', sans-serif; }
 
 @media screen and (max-width: 560px) {
   .card {
-    height: 650px; 
-    margin-top: 8em; 
-    border-radius: 0 ; 
+    height: 650px;
+    margin-top: 8em;
+    border-radius: 0 ;
   }
 }
 
@@ -99,6 +99,6 @@ p { font-family: 'Muli', sans-serif; }
   .card { height: 900px; }
   .content__container {
     width: 205px;
-    margin-top: 2em; 
+    margin-top: 2em;
   }
 }
