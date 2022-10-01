@@ -12,7 +12,7 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 |   6   | Modal                   | [Live Preview](https://mohammedyh.github.io/ui-components/Modal)                       |
 |   7   | Course Card             | [Live Preview](https://mohammedyh.github.io/ui-components/Course%20Card)               |
 |   8   | Newsletter Form         | [Live Preview](https://mohammedyh.github.io/ui-components/Newsletter%20Form)           |
-|  9   | Cards                   | [Live Preview](https://mohammedyh.github.io/ui-components/Cards)                       |
+|  9    | Cards                   | [Live Preview](https://mohammedyh.github.io/ui-components/Cards)                       |
 |  10   | Webshop Components      | [Live Preview](https://mohammedyh.github.io/ui-components/Webshop%20Components)        |
 |  11   | Price Cards             | [Live Preview](https://mohammedyh.github.io/ui-components/Price%20Cards)               |
 |  12   | Landing Page            | [Live Preview](https://mohammedyh.github.io/ui-components/Landing%20Page)              |
@@ -37,3 +37,4 @@ A collection of UI components from https://www.uidesigndaily.com/ built using HT
 |  31   | Multi Select Price Card | [Live Preview](https://mohammedyh.github.io/ui-components/multi-select-price-card/src) |
 |  32   | Billing Page            | [Live Preview](https://mohammedyh.github.io/ui-components/billing-page/src)            |
 |  33   | Article Component       | [Live Preview](https://mohammedyh.github.io/ui-components/article-component)           |
+|  34   | Share Post Card         | [Live Preview](https://mohammedyh.github.io/ui-components/share-post-card)             |
